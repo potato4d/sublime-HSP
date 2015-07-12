@@ -1,0 +1,303 @@
+{
+	"scope": "source.hsp",
+
+	"completions":
+	[
+		//Basic
+		{"trigger": "screen"   , "contents": "screen ${1:ID}, ${2:width}, ${3:height}, ${4:mode}"},
+		{"trigger": "buffer"   , "contents": "buffer ${1:ID}, ${2:width}, ${3:height}, ${4:mode}"},
+		{"trigger": "chgdisp"  , "contents": "chgdisp ${1:mode}, ${2:width}, ${3:height}"},
+		{"trigger": "bgscr"    , "contents": "bgscr ${1:ID}, ${2:width}, ${3:height}, ${4:mode}"},
+
+		{"trigger": "width"    , "contents": "width ${1:width}, ${2:height}, ${3:x}, ${4:y}"},
+		
+
+		{"trigger": "mes"      , "contents": "mes \"${1:}\""},
+		{"trigger": "print"    , "contents": "print \"${1:}\""},
+		{"trigger": "title"    , "contents": "title \"${1:}\""},
+		{"trigger": "pos"      , "contents": "pos ${1:x}, ${2:y}"},
+
+		{"trigger": "color"    , "contents": "color ${1:red}, ${2:green}, ${3:blue}"},
+		{"trigger": "syscolor" , "contents": "syscolor ${1:15}"},
+		{"trigger": "palette"  , "contents": "palette ${1:ID}, ${2:red}, ${3:green}, ${34:blue}"},
+		{"trigger": "hsvcolor" , "contents": "hsvcolor ${1:hue}, ${2:saturation}, ${3:value}"},
+		{"trigger": "palcolor" , "contents": "palcolor ${1:ID}"},
+
+		{"trigger": "dialog"   , "contents": "dialog ${1:value}, ${2:mode}, ${3:option}"},
+
+		{"trigger": "pget"     , "contents": "pget ${1:x}, ${2:y}"},
+		{"trigger": "pset"     , "contents": "pset ${1:x}, ${2:y}"},
+		{"trigger": "line"     , "contents": "line ${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}"},
+		{"trigger": "circle"   , "contents": "circle ${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:mode}"},
+		{"trigger": "boxf"     , "contents": "boxf ${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}"},
+		{"trigger": "gradf"    , "contents": "gradf ${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:mode}, ${6:fromColor}, ${7:toColor}"},
+		{"trigger": "cls"      , "contents": "cls ${1:mode}"},
+
+		{"trigger": "font"     , "contents": "font \"${1:font}\", ${2:size}, ${3:style}"},
+		{"trigger": "sysfont"  , "contents": "sysfont ${1:0}"},
+
+		{"trigger": "if"       , "contents": "if(${1:condition}){\n}"},
+		{"trigger": "else"     , "contents": "else{\n}"},
+		{"trigger": "while"    , "contents": "while(${1:condition})"},
+		{"trigger": "until"    , "contents": "until(${1:condition})"},
+		{"trigger": "repeat"   , "contents": "repeat ${1:count}\nloop"},
+		{"trigger": "for"      , "contents": "for i, 0, ${1:max}, 1\nnext"},
+		{"trigger": "foreach"  , "contents": "foreach ${1:var}\nloop"},
+
+		{"trigger": "switch"   , "contents": "switch ${1:var}"},
+		{"trigger": "case"     , "contents": "case ${1:value}"},
+
+		{"trigger": "return"   , "contents": "return ${1:value}"},
+
+		// Label
+
+		{"trigger": "goto"     , "contents": "goto *${1:label}"},
+		{"trigger": "exgoto"   , "contents": "exgoto ${1:var}, ${2:flag}, ${3:value}, *${4:label}"},
+		{"trigger": "onclick"  , "contents": "onclick *${1:label}"},
+		{"trigger": "onerror"  , "contents": "onerror *${1:label}"},
+		{"trigger": "onexit"   , "contents": "onexit *${1:label}"},
+		{"trigger": "onkey"    , "contents": "onkey *${1:label}"},
+		{"trigger": "gosub"    , "contents": "gosub *${1:label}"},
+ 
+		// Input
+
+		{"trigger": "input"    , "contents": "input ${1:var}, ${2:width}, ${3:height}, ${4:len}"},
+		{"trigger": "mesbox"   , "contents": "mesbox ${1:var}, ${2:width}, ${3:height}, ${4:style}, ${5:len}"},
+		{"trigger": "button"   , "contents": "button ${1:text}, *${2:label}"},
+		{"trigger": "combox"   , "contents": "combox ${1:var}, ${2:height}, ${3:elements}"},
+		{"trigger": "chkbox"   , "contents": "chkbox ${1:text}, ${3:var}"},
+		{"trigger": "listbox"  , "contents": "listbox ${1:var}, ${2:height}, ${3:text}"},
+		{"trigger": "clrobj"   , "contents": "clrobj ${1:from}, ${2:to}"},
+ 
+		{"trigger": "objsel"   , "contents": "objsel ${1:ID}"},
+		{"trigger": "objprm"   , "contents": "objprm ${1:ID}, ${2:value}"},
+		{"trigger": "objsize"  , "contents": "objsize ${1:width}, ${2:height}"},
+		{"trigger": "objskip"  , "contents": "objskip ${1:ID}, ${2:mode}"},
+		{"trigger": "objmode"  , "contents": "objmode ${1:font}, ${2:focus}"},
+		{"trigger": "objinfo"  , "contents": "objinfo(${1:ID})"},
+		{"trigger": "objimage" , "contents": "objimage ${1:ID}, ${2:x}, ${3:y}, ${4:x2}, ${5:y2}, ${6:x3}, ${7:y3}"},
+		{"trigger": "objimage" , "contents": "objimage ${1:ID}, ${2:x}, ${3:y}, ${4:x2}, ${5:y2}, ${6:x3}, ${7:y3}"},
+		{"trigger": "winobj"   , "contents": "winobj ${1:class}, ${2:text}, ${3:style1}, ${4:style2}, ${5:size}"},
+
+
+		{"trigger": "stick"    ,  "contents": "stick ${1:value}, ${2:trigger}, ${3:active}"},
+		{"trigger": "getkey"   , "contents": "getkey ${1:value}, ${2:keyCode}"},
+ 
+		{"trigger": "mouse"    ,  "contents": "mouse ${1:x}, ${2:y}"},
+ 
+		// Time
+
+		{"trigger": "wait"     , "contents": "wait ${1:time}"},
+		{"trigger": "await"    , "contents": "await ${1:time}"},
+ 
+		{"trigger": "gettime"  , "contents": "gettime(${1:type})"},
+ 
+		// variable control and Math function
+
+		// variable
+
+		{"trigger": "int"      , "contents": "int(${1:value})"},
+		{"trigger": "str"      , "contents": "str(${1:value})"},
+		{"trigger": "double"   , "contents": "double(${1:value})"},
+		{"trigger": "strlen"   , "contents": "strlen(${1:value})"},
+
+		{"trigger": "varptr"   , "contents": "varptr(${1:var})"},
+		{"trigger": "varuse"   , "contents": "varuse(${1:var})"},
+		{"trigger": "vartype"  , "contents": "vartype(${1:var})"},
+ 
+		{"trigger": "length2"  , "contents": "length2(${1:var})"},
+		{"trigger": "length3"  , "contents": "length3(${1:var})"},
+		{"trigger": "length4"  , "contents": "length4(${1:var})"},
+		{"trigger": "length"   , "contents": "length(${1:var})"},
+ 
+		{"trigger": "dup"      , "contents": "dup ${1:var1}, ${2:var2}"},
+		{"trigger": "dupptr"   , "contents": "dupptr ${1:name}, ${2:address}, ${3:size}, ${4:dataType}"},
+		{"trigger": "libptr"   , "contents": "libptr(${1:command})"},
+ 
+		{"trigger": "peek"     , "contents": "peek(${1:value}, ${2:index})"},
+		{"trigger": "wpeek"    , "contents": "wpeek(${1:value}, ${2:index})"},
+		{"trigger": "lpeek"    , "contents": "lpeek(${1:value}, ${2:index})"},
+ 
+		{"trigger": "dim"      , "contents": "dim ${1:name}"},
+		{"trigger": "ddim"     , "contents": "ddim ${1:name}"},
+		{"trigger": "ldim"     , "contents": "ldim ${1:name}"},
+		{"trigger": "sdim"     , "contents": "sdim ${1:name}, ${2:bytes}"},
+		{"trigger": "newlab"   , "contents": "newlab ${1:var}, *${2:label}"},
+		{"trigger": "dimtype"  , "contents": "dimtype ${1:name}, ${2:dataType}"},
+ 
+		// Math
+		{"trigger": "abs"      , "contents": "abs(${1:value})"},
+		{"trigger": "absf"     , "contents": "absf(${1:value})"},
+		{"trigger": "rnd"      , "contents": "rnd(${1:value})"},
+		{"trigger": "logf"     , "contents": "logf(${1:value})"},
+ 
+		{"trigger": "sin"      , "contents": "sin(${1:value})"},
+		{"trigger": "cos"      , "contents": "cos(${1:value})"},
+		{"trigger": "tan"      , "contents": "tan(${1:value})"},
+		{"trigger": "atan"     , "contents": "atan(${1:y}, ${2:x})"},
+		{"trigger": "sqrt"     , "contents": "sqrt(${1:value})"},
+
+		{"trigger": "powf"     , "contents": "powf(${1:value}, ${2:exp})"},
+		{"trigger": "expf"     , "contents": "expf(${1:value})"},
+
+		{"trigger": "limit"    , "contents": "limit(${1:value}, ${2:min}, ${3:max})"},
+		{"trigger": "limitf"   , "contents": "limitf(${1:value}, ${2:min}, ${3:max})"},
+
+		{"trigger": "alloc"    , "contents": "alloc ${1:value}, ${2:size}"},
+
+		// String
+		
+		{"trigger": "instr"    , "contents": "instr ${1:haystack}, ${2:index}, ${3:needle}"},
+		{"trigger": "split"    , "contents": "split ${1:text}, \"${2:delimiter}\", ${3:var1}, ${4:var2}"},
+		{"trigger": "strmid"   , "contents": "strmid(${1:text}, ${2:index}, ${3:len})"},
+		{"trigger": "strtrim"  , "contents": "strtrim(${1:haystack}, ${2:mode}, ${3:needle})"},
+		{"trigger": "strf"     , "contents": "strf(\"${1:option}\", ${2:text})"},
+		{"trigger": "getstr"   , "contents": "getstr ${1:var}, ${2:text}, ${3:index}, ${4:delimiter}"},
+		{"trigger": "cnvstow"  , "contents": "cnvstow ${1:var}, ${2:text}"},
+		{"trigger": "cnvwtos"  , "contents": "cnvwtos ${1:var}"},
+
+		// Sounds
+
+		{"trigger": "mci"      , "contents": "mci \"${1:}\""},
+		{"trigger": "mmload"   , "contents": "mmload \"${1:filename}\", ${2:ID}, ${3:mode}"},
+		{"trigger": "mmplay"   , "contents": "mmplay ${1:ID}"},
+
+		// Images
+
+		{"trigger": "picload"  , "contents": "picload \"${1:filename}\", ${2:mode}"},
+
+		{"trigger": "celload"  , "contents": "celload \"${1:filename}\", ${2:ID}, ${3:mode}, "},
+		{"trigger": "celdiv"   , "contents": "celdiv \"${1:ID}\", ${2:splitX}, ${3:splitY}, ${4:x}, ${5:y}"},
+		{"trigger": "celput"   , "contents": "celput \"${1:ID}\", ${2:no}, ${3:xScale}, ${4:yScale}, ${5:ang}"},
+
+		{"trigger": "redraw"   , "contents": "redraw ${1:mode}"},
+
+		{"trigger": "gsel"     , "contents": "gsel ${1:ID}, ${2:option}"},
+		{"trigger": "gmode"    , "contents": "gmode ${1:mode}, ${2:width}, ${3:height}, ${4:alpha}"},
+		{"trigger": "groll"    , "contents": "groll ${1:x}, ${2:y}"},
+
+		{"trigger": "ginfo"    , "contents": "ginfo ${1:type}"},
+
+		{"trigger": "gcopy"    , "contents": "gcopy ${1:ID}, ${2:x}, ${3:y}, ${4:width}, ${5:height}"},
+		{"trigger": "grect"    , "contents": "grect ${1:x}, ${2:y}, ${3:ang}, ${4:width}, ${5:height}"},
+		{"trigger": "grotate"  , "contents": "grotate ${1:ID}, ${2:x}, ${3:y}, ${4:ang}, ${5:width}, ${6:height}"},
+		{"trigger": "gzoom"    , "contents": "gzoom ${1:zoomWidth}, ${2:zoomHeight}, ${3:ID}, ${4:x}, ${5:y}, ${6:width}, ${7:height}, ${8:mode}"},
+
+		// Files 
+
+		{"trigger": "bload"    , "contents": "bload \"${1:filename}\", ${2:value}"},
+		{"trigger": "bcopy"    , "contents": "bcopy \"${1:frompath}\", ${2:topath}"},
+		{"trigger": "bsave"    , "contents": "bsave \"${1:filename}\", ${2:value}"},
+
+		{"trigger": "chdpm"    , "contents": "chdpm \"${1:filename}\""},
+
+		{"trigger": "mkdir"    , "contents": "mkdir \"${1:filename}\""},
+		{"trigger": "chdir"    , "contents": "chdir \"${1:filename}\""},
+		{"trigger": "exist"    , "contents": "exist \"${1:filename}\""},
+		{"trigger": "delete"   , "contents": "delete \"${1:filename}\""},
+		{"trigger": "bmpsave"  , "contents": "bmpsave \"${1:filename}\""},
+		{"trigger": "dirlist"  , "contents": "dirlist ${1:var}, \"${2:mask}\", ${3:mode}"},
+		{"trigger": "dirinfo"  , "contents": "dirinfo(${1:type})"},
+ 
+		{"trigger": "notesel"  , "contents": "notesel ${1:var}"},
+		{"trigger": "noteload" , "contents": "noteload \"${1:filename}\", ${2:maxBytes}"},
+		{"trigger": "notesave" , "contents": "notesave \"${1:filename}\""},
+		{"trigger": "noteadd"  , "contents": "noteadd ${1:text}, ${2:index}, ${3:mode}"},
+		{"trigger": "noteget"  , "contents": "noteget ${1:value}, ${2:index}"},
+		{"trigger": "notedel"  , "contents": "notedel ${1:index}"},
+		{"trigger": "notenfo"  , "contents": "notenfo(${1:mode})"},
+
+		{"trigger": "getpath"  , "contents": "getpath(\"${1:filename}\", ${2:type})"},
+
+		// Others 
+
+		{"trigger": "memexpand", "contents": "memexpand ${1:varBuf}, ${2:size}"},
+		{"trigger": "memfile"  , "contents": "memfile ${1:fileBuf}, ${2:offset}, ${3:size}"},
+		{"trigger": "memset"   , "contents": "memset ${1:varBuf}, ${2:value}, ${3:size}, ${4:offset}"},
+		{"trigger": "memcpy"   , "contents": "memcpy ${1:var2}, ${2:var2}, ${3:size}, ${4:offset1}, ${5:offset2}"},
+
+		{"trigger": "newmod"   , "contents": "newmod ${1:var}, ${2:module}, ${3:arg}"},
+		{"trigger": "delmod"   , "contents": "delmod ${1:var}"},
+
+		{"trigger": "logmes"   , "contents": "logmes \"${1:}\""},
+		{"trigger": "assert"   , "contents": "assert \"${1:condition}\""},
+
+		{"trigger": "sendmsg"  , "contents": "sendmsg ${1:handle}, ${2:msg}, ${3:wp}, ${4:lp}, ${5:mode}"},
+
+		{"trigger": "run"      , "contents": "run ${1:name}"},
+
+		{"trigger": "poke"     , "contents": "poke ${1:var}, ${2:index}, ${3:text}"},
+		{"trigger": "wpoke"    , "contents": "wpoke ${1:var}, ${2:index}, ${3:text}"},
+		{"trigger": "lpoke"    , "contents": "lpoke ${1:var}, ${2:index}, ${3:text}"},
+		{"trigger": "mref"     , "contents": "mref ${1:var}, ${2:ID}"},
+
+		{"trigger": "comres"   , "contents": "comres ${1:value}"},
+		{"trigger": "comevdisp", "contents": "comevdisp ${1:var}"},
+		{"trigger": "comevent" , "contents": "comevent ${1:var1}, ${2:var2}, ${3:guid}, *${4:label}"},
+		{"trigger": "comevarg" , "contents": "comevarg ${1:var1}, ${2:var2}, ${3:index}, ${4:mode}"},
+		{"trigger": "querycom" , "contents": "querycom ${1:var1}, ${2:var2}, ${3:interface}"},
+		{"trigger": "newcom"   , "contents": "newcom ${1:var}, ${2:interface}, ${3:mode}, ${4:pointer}"},
+		{"trigger": "delcom"   , "contents": "delcom ${1:var}"},
+		{"trigger": "mcall"    , "contents": "mcall ${1:var}, ${2:method}, ${3:arg}"},
+		{"trigger": "axobj"    , "contents": "axobj ${1:var}, ${2:class}, ${3:width}, ${4:height}"},
+
+		{"trigger": "callfunc" , "contents": "callfunc(${1:name}, ${2:address}, ${3:args})"},
+		{"trigger": "exec"     , "contents": "exec \"${1:filename}\", ${2:mode}, ${3:option}"},
+
+		// No argument functions
+		"do",
+		"end",
+		"wend",
+		"next",
+		"swend",
+		"swbreak",
+		"stop",
+		"randomize",
+		"continue",
+		"break",
+		"_break",
+		"mmstop",
+		"noteunsel",
+		"default",
+		"_continue",
+
+		// Constants
+
+		"true",
+		"false",
+		"ID",
+		"var",
+
+		// System variables
+		"stat",
+		"cmdline",
+		"err",
+		"dispx",
+		"dispy",
+		"winy",
+		"winx",
+		"csrx",
+		"csry",
+		"prmx",
+		"prmy",
+		"rval",
+		"gval",
+		"bval",
+		"paluse",
+		"mousex",
+		"mousey",
+		"exedir",
+		"windir",
+		"curdir",
+		"refstr",
+		"strsize",
+		"looplev",
+		"cnt",
+		"sublev",
+		"iparam",
+		"lparam",
+		"wparam",
+		"hspstat",
+		"hspver"
+	]
+}
