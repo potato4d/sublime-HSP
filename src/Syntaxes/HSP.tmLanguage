@@ -11,6 +11,38 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>comment</key>
+			<string>Line Comment</string>
+			<key>match</key>
+			<string>//.*</string>
+			<key>name</key>
+			<string>comment.line.hsp</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>string.block.hsp</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>end</key>
+			<string>'</string>
+			<key>name</key>
+			<string>string.quoted.single.hsp</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.single.hsp</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>comevdisp</string>
 			<key>name</key>
@@ -240,7 +272,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>for</string>
+			<string>for </string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -312,12 +344,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>end</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>exec</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
@@ -355,12 +381,6 @@
 		<dict>
 			<key>match</key>
 			<string>loop</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>on</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -480,19 +500,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>ddim</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>delmod</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>dim</string>
+			<string>ddim</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -504,7 +518,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>sdim</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>ldim</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>dim</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -547,12 +573,6 @@
 		<dict>
 			<key>match</key>
 			<string>poke</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>sdim</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -625,12 +645,6 @@
 		<dict>
 			<key>match</key>
 			<string>cls</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>color</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -714,12 +728,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>mes</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>palcolor</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
@@ -798,7 +806,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>width</string>
+			<string>width </string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -810,13 +818,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>abs</string>
+			<string>absf</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>absf</string>
+			<string>abs</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -870,18 +878,6 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>int</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>length</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>length2</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
@@ -900,19 +896,25 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>length</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>libptr</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>limit</string>
+			<string>limitf</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>limitf</string>
+			<string>limit</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -949,12 +951,6 @@
 		<dict>
 			<key>match</key>
 			<string>sqrt</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>str</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -1349,12 +1345,226 @@
 			<string>constant.hsp</string>
 		</dict>
 		<dict>
-			<key>comment</key>
-			<string>Comment</string>
 			<key>match</key>
-			<string>//.*</string>
+			<string>true</string>
 			<key>name</key>
-			<string>comment.line.review</string>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>false</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>stat</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>cmdline</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>err</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>dispx</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>dispy</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>winy</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>winx</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>csrx</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>csry</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>prmx</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>prmy</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>rval</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>gval</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>bval</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>paluse</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>mousex</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>mousey</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>exedir</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>windir</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>curdir</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>refstr</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>strsize</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>looplev</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>cnt</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>sublev</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>iparam</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>lparam</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>wparam</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>hspstat</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>hspver</string>
+			<key>name</key>
+			<string>constant.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>str</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>int</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>mes</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>color</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>end</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
