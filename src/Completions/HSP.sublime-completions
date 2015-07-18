@@ -261,6 +261,51 @@
 		"default",
 		"_continue",
 
+		// Library functions
+
+		"netinit",
+		"netterm",
+		"ftpclose",
+		"ftpdirlist",
+		
+		{"trigger": "netexec"    , "contents": "netexec ${1:var}"},
+		{"trigger": "netmode"    , "contents": "netmode ${1:var}"},
+		{"trigger": "neterror"   , "contents": "neterror ${1:var}"},
+		{"trigger": "neturl"     , "contents": "neturl \"${1:url}\""},
+		{"trigger": "netrequest" , "contents": "netrequest \"${1:filename}\""},
+		{"trigger": "netload"    , "contents": "netload \"${1:filename}\""},
+		{"trigger": "netfileinfo", "contents": "netfileinfo ${1:var} \"${2:filename}\""},
+		{"trigger": "netdlname"  , "contents": "netdlname \"${1:filename}\""},
+		{"trigger": "netproxy"   , "contents": "netproxy \"${1:serverName}\", ${2:port}, ${3:flag}"},
+		{"trigger": "netagent"   , "contents": "netagent \"${1:text}\""},
+		{"trigger": "netheader"  , "contents": "netheader \"${1:text}\""},
+		{"trigger": "netsize"    , "contents": "netsize ${1:var}"},
+
+		{"trigger": "netrequest_get" , "contents": "netrequest_get \"${1:filename}\""},
+		{"trigger": "netrequest_post", "contents": "netrequest_post \"${1:filename}\", ${2:var}"},
+		{"trigger": "netgetv"        , "contents": "netgetv ${1:var}"},
+
+		{"trigger": "filecrc"    , "contents": "filecrc ${1:var}, \"${2:filename}\""},
+		{"trigger": "filemd5"    , "contents": "filemd5 ${1:var}, \"${2:filename}\""},
+
+		{"trigger": "ftpopen"    , "contents": "ftpopen ${1:address}, ${2:user}, ${3:password}, ${4:port}"},
+		{"trigger": "ftpresult"  , "contents": "ftpresult ${1:var}"},
+		{"trigger": "ftpdir"     , "contents": "ftpdir ${1:var}, ${2:dirName}"},
+		{"trigger": "ftpdirlist2", "contents": "ftpdirlist2 ${1:var}"},
+		{"trigger": "ftpcmd"     , "contents": "ftpcmd \"${1:command}\""},
+		{"trigger": "ftpmkdir"   , "contents": "ftpmkdir ${1:dir}"},
+		{"trigger": "ftprmdir"   , "contents": "ftprmdir ${1:dir}"},
+		{"trigger": "ftpget"     , "contents": "ftpget \"${1:filename1}\", \"${2:filename2}\", ${3:mode}"},
+		{"trigger": "ftpput"     , "contents": "ftpput \"${1:filename1}\", \"${2:filename2}\", ${3:mode}"},
+		{"trigger": "ftprename"  , "contents": "ftprename \"${1:filename1}\", \"${2:filename2}\""},
+		{"trigger": "ftpdelete"  , "contents": "ftpdelete \"${1:filename}\""},
+
+
+		{"trigger": "nkfcnv"  , "contents": "nkfcnv ${1:var1}, ${2:var2}, \"${3:option}\", ${4:strSize}, ${5:bufferSize}"},
+		{"trigger": "nkfguess", "contents": "aaaaaaaa"},
+		{"trigger": "getenv"  , "contents": "aaaaaaaa"},
+		{"trigger": "getctime", "contents": "aaaaaaaa"},
+
 		// Constants
 
 		"true",

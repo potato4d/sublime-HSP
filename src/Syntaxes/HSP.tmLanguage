@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -40,7 +40,7 @@
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
-			<string>string.quoted.single.hsp</string>
+			<string>string.quoted.double.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -261,12 +261,6 @@
 		<dict>
 			<key>match</key>
 			<string>default</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>do</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -878,25 +872,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>length2</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>length3</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>length4</string>
-			<key>name</key>
-			<string>keyword.hsp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>length</string>
+			<string>\b(lengt(h|h2|h3|h4))\b</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
@@ -1148,393 +1124,963 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>netinit</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netterm</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netexec</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netmode</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>neterror</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>neturl</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netdlname</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netproxy</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netagent</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netheader</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netrequest</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netload</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netfileinfo</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netsize</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>filecrc</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpopen</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpclose</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>filemd5</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpresult</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpdir</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpdirlist</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpdirlist2</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpcmd</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftprmdir</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpget</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpput</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftprename</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ftpdelete</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netrequest_get</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netrequest_post</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>netgetv</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>nkfcnv</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>nkfguess</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>getenv</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>getctime</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>gfini</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>gfcopy</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>gfdec</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>gfinc</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>hsvcolor</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>grect</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>grotate</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>gsquare</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>sysinfo</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>sysexit</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>emath</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>emstr</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>emcnv</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>emint</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>emsin</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>emcos</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>emsqr</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>ematan</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>regkey</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>getreg</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>setreg</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>regkill</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>reglist</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>comopen</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>comclose</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>computc</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>comput</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>comgetc</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>comget</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>comstat</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>comcontrol</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxcopy</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxren</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxinfo</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxaget</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxaset</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxtget</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxtset</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>selfolder</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxshort</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxdir</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>fxlink</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>lzdist</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>lzcopy</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>clipset</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>clipsetg</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>clipget</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplsel</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplobj</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplact</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplfocus</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplstr</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplkey</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplkeyu</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplkeyd</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>aplget</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>apledit</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>pipeput</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>pipeget</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>pipeexec</string>
+			<key>name</key>
+			<string>support.function.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>#addition</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#aht</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#ahtmes</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#cfunc</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#cmd</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#cmpopt</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#comfunc</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#const</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#defcfunc</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#deffunc</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#define</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#else</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#endif</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#enum</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#epack</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#func</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#global</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#if</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#ifdef</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#ifndef</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#include</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#modcfunc</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#modfunc</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#modinit</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#modterm</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#module</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#pack</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#packopt</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#regcmd</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#runtime</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#undef</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#usecom</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>#uselib</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>true</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>false</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>stat</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>cmdline</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>err</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>dispx</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>dispy</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>winy</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>winx</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>csrx</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>csry</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>prmx</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>prmy</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>rval</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>gval</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>bval</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>paluse</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>mousex</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>mousey</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>exedir</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>windir</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>curdir</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>refstr</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>strsize</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>looplev</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>cnt</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>sublev</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>iparam</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>lparam</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>wparam</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>hspstat</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>hspver</string>
 			<key>name</key>
-			<string>constant.hsp</string>
+			<string>constant.language.hsp</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -1563,6 +2109,12 @@
 		<dict>
 			<key>match</key>
 			<string>end</string>
+			<key>name</key>
+			<string>keyword.hsp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>do</string>
 			<key>name</key>
 			<string>keyword.hsp</string>
 		</dict>
