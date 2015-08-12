@@ -1,0 +1,5 @@
+{
+    "cmd": ["C:\\hsp34\\sthspcmp", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.hsp"
+}
