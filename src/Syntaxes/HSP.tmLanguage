@@ -19,6 +19,14 @@
 			<string>comment.line.hsp</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Line Comment</string>
+			<key>match</key>
+			<string>;.*</string>
+			<key>name</key>
+			<string>comment.line.hsp</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>/\*</string>
 			<key>end</key>
