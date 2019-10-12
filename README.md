@@ -1,4 +1,9 @@
-#sublime-HSP
+# This project is no longer maintained.
+
+Please contact the person who takes over the maintenance.
+
+# Sublime HSP
+
 This is the "Sublime Text" HSP syntax package.
 
 ## Installation
